@@ -109,4 +109,4 @@ void UARTMonitor_PrintDecodedValues(void);
 const char* UARTMonitor_GetChargerPhaseName(uint8_t phase);
 
 #endif /* UART_MONITOR_H */
-``
+

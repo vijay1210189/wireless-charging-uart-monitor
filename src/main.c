@@ -37,4 +37,7 @@ int main(void)
     /*
      * Print decoded values like a GUI would display.
      */
-   
+    UARTMonitor_PrintDecodedValues();
+
+    return 0;
+}
