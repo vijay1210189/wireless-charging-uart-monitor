@@ -1,0 +1,132 @@
+body {
+    font-family: Arial;
+    background: #e6e6e6;
+    margin: 0;
+    padding: 6px;
+}
+
+h2 {
+    text-align: center;
+    margin: 4px 0;
+}
+
+/* ✅ FIXED TOP BAR */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* tighter */
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: 13px;
+}
+
+input {
+    width: 65px;
+    padding: 2px;
+}
+
+/* BUTTON */
+button {
+    padding: 2px 8px;
+    border: 1px solid #888;
+    background: #ddd;
+    font-size: 12px;
+}
+
+.stop {
+    background: red;
+    color: white;
+}
+
+/* GRID */
+.main {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 6px;
+}
+
+/* PANEL */
+.panel {
+    background: #f0f0f0;
+    border: 1px solid #999;
+    padding: 4px;
+}
+
+.full {
+    grid-column: span 2;
+}
+
+/* FORM */
+.form {
+    display: grid;
+    grid-template-columns: 65px 95px 65px 95px;
+    gap: 3px 5px;
+}
+
+/* FIELD */
+.field {
+    background: #fff;
+    border: 1px solid #bbb;
+    padding: 2px;
+    text-align: center;
+}
+
+.highlight {
+    background: #cfe8cf;
+    font-weight: bold;
+}
+
+.warning {
+    color: red;
+}
+
+/* LED */
+.led {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.red { background: red; }
+.green { background: green; }
+
+.led-matrix {
+    display: grid;
+    grid-template-columns: repeat(8, 12px);
+    gap: 4px;
+}
+
+.margin-box {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.yellow-box {
+    background: yellow;
+    padding: 4px;
+    border: 1px solid #888;
+    font-size: 10px;
+}
+
+/* TABLE */
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+th {
+    background: #dcdcdc;
+}
+
+td, th {
+    border: 1px solid #999;
+    padding: 3px 8px;
+    font-size: 12px;
+    text-align: center;
+}

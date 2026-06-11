@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wireless Charging UART Dashboard</title>
+
+<!-- ✅ FIXED -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h2>Wireless Charging UART Monitor</h2>
+
+<div class="top-panel">
+<div class="row">
+
+<label>Port:</label>
+<input value="COM4">
+
+<label>Baud:</label>
+<input value="9600">
+
+<button>Connect</button>
+<button>Monitor</button>
+<button>Pause</button>
+<button class="stop">Stop</button>
+
+<span>Status:</span>
+<span class="led green"></span>
+
+</div>
+</div>
+
+<div class="main">
+
+<div class="panel">
+<h3>Charging Status</h3>
+
+<div class="form">
+
+<label>Charging</label><div class="field">ACTIVE</div>
+<label>Phase</label><div class="field highlight">POWER TRANSFER</div>
+
+<label>Coil</label><div class="field">Coil1</div>
+<label>Signal</label><div class="field">0</div>
+
+<label>Battery</label><div class="field">13990 mV</div>
+<label>DP Curr</label><div class="field">228 mA</div>
+
+<label>Rail</label><div class="field">2830 mV</div>
+<label>Freq</label><div class="field">0 Hz</div>
+
+<label>TX Power</label><div class="field">10 mW</div>
+<label>RX Power</label><div class="field">0 mW</div>
+
+<label>Loss</label><div class="field warning">10 mW</div>
+<label>Ctrl Err</label><div class="field">0</div>
+
+<label>Temp1</label><div class="field">125 °C</div>
+<label>Temp2</label><div class="field">117 °C</div>
+
+<label>Temp3</label><div class="field">125 °C</div>
+<label>Ctrl Int</label><div class="field">0 ms</div>
+
+</div>
+</div>
+
+<div class="panel">
+<h3>Error Flags</h3>
+
+<div class="led-matrix">
+<span class="led red"></span>
+<span class="led green"></span>
+<span class="led green"></span>
+<span class="led green"></span>
+<span class="led red"></span>
+<span class="led green"></span>
+<span class="led red"></span>
+<span class="led green"></span>
+</div>
+
+<p>Open Air: <span class="led green"></span></p>
+
+<div class="margin-box">
+<div class="yellow-box">Q Margin</div>
+<div class="yellow-box">Power Margin</div>
+</div>
+</div>
+
+<div class="panel">
+<h3>Open FOD Status</h3>
+
+<div class="form">
+<label>Q Norm</label><div class="field">1470</div>
+<label>Delta</label><div class="field">0</div>
+
+<label>Q Margin</label><div class="field">0</div>
+<label>Coeff</label><div class="field">0</div>
+
+<label>Verify</label><div class="field">1470</div>
+<label>Margin Ver</label><div class="field">1470</div>
+</div>
+</div>
+
+<div class="panel">
+<h3>Real FOD Verify</h3>
+
+<div class="form">
+<label>PTX</label><div class="field">10 mW</div>
+<label>PTX Cal</label><div class="field">0 mW</div>
+
+<label>PRX</label><div class="field">0 mW</div>
+<label>Threshold</label><div class="field">0</div>
+
+<label>Margin</label><div class="field">0</div>
+<label>Alpha</label><div class="field">0</div>
+
+<label>Gamma</label><div class="field">0</div>
+<label>Cal Verify</label><div class="field">10 mW</div>
+
+<label>Thresh Ver</label><div class="field">0</div>
+</div>
+</div>
+
+<div class="panel full">
+<h3>UART Response</h3>
+
+<table>
+<thead>
+<tr><th>Index</th><th>Value</th></tr>
+</thead>
+<tbody>
+<tr><td>00</td><td>0x72</td></tr>
+<tr><td>01</td><td>0x00</td></tr>
+<tr><td>02</td><td>0x1D</td></tr>
+<tr><td>03</td><td>Selected Coil</td></tr>
+<tr><td>04</td><td>Charge Status</td></tr>
+<tr><td>05</td><td>Error HH</td></tr>
+<tr><td>06</td><td>Error HL</td></tr>
+<tr><td>07</td><td>Error LH</td></tr>
+<tr><td>08</td><td>Error LL</td></tr>
+<tr><td>31</td><td>Charger Phase</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
+``
